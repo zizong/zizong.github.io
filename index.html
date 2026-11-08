@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宋宇哲 - 个人信息</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 900px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+        
+        h2 {
+            color: #3498db;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+        
+        .info-item {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            min-width: 100px;
+            color: #2c3e50;
+        }
+        
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .interest-tag {
+            background-color: #e1f5fe;
+            color: #0277bd;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .github-link:hover {
+            background-color: #3498db;
+        }
+        
+        .github-icon {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #95a5a6;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 600px) {
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>宋宇哲</h1>
+            <p class="subtitle">热爱编程与学习的少年</p>
+        </header>
+        
+        <div class="cards-container">
+            <div class="card">
+                <h2>基本信息</h2>
+                <div class="info-item">
+                    <span class="info-label">姓名：</span>
+                    <span>宋宇哲</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">年龄：</span>
+                    <span>15岁</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">身份：</span>
+                    <span>学生</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>兴趣爱好</h2>
+                <div class="interests">
+                    <span class="interest-tag">运动</span>
+                    <span class="interest-tag">学习</span>
+                    <span class="interest-tag">编程</span>
+                    <span class="interest-tag">音乐</span>
+                    <span class="interest-tag">游戏</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>GitHub</h2>
+                <div class="info-item">
+                    <span class="info-label">用户名：</span>
+                    <span>zizong</span>
+                </div>
+                <a href="https://github.com/zizong" class="github-link" target="_blank">
+                    <span class="github-icon">⚡</span>
+                    <span>访问我的GitHub主页</span>
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2026 zizong.github.io. 保留所有权利.</p>
+        </footer>
+    </div>
+</body>
+</html>
